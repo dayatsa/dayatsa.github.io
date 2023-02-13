@@ -88,12 +88,12 @@
     var month = new Date().getMonth() + 1;
     var dateDay = new Date().getDate();
     // 设置标题
-    if (month == 2 && dateDay == 12) {
-      $(document).attr("title", "在一起" + parseInt(years - 2017) + "年,始于初见,终于到老。");
-    } else if (dateDay == 12) {
-      $(document).attr("title", "在一起" + parseInt(days / 30) + "个月,始于初见,终于到老。");
+    if (month == 11 && dateDay == 30) {
+      $(document).attr("title", parseInt(years - 2020) + " tahun bersama");
+    } else if (dateDay == 30) {
+      $(document).attr("title", parseInt(days / 30) + "bulan sejak dari pertemuan pertama");
     } else
-    $(document).attr("title", "在一起" + days + "天,始于初见,终于到老。");
+    $(document).attr("title", days + "hari");
     document.writeln(
       "<div class=\"snow\" style=\"height:100%; position:fixed; left:0px; top:0px;right:0px; bottom:0px; pointer-events: none;z-index: 9999;\"><canvas width=\"1904\" height=\"913\" style=\"position:absolute;left: 0;top: 0;\"></canvas></div>"
     );
@@ -316,7 +316,20 @@
       
   }
   var imgList = ['./images/14.jpeg', './images/13.jpeg', './images/12.jpeg', './images/11.jpeg', './images/10.jpeg', './images/9.jpeg', './images/8.jpeg', './images/7.jpeg', './images/6.jpeg', './images/5.jpeg', './images/4.jpeg', './images/3.jpeg', './images/2.jpeg', './images/1.jpeg'];
-  var imgDescList = ['./images/14.jpeg', './images/13.jpeg', './images/12.jpeg', './images/11.jpeg', './images/10.jpeg', './images/9.jpeg', './images/8.jpeg', './images/7.jpeg', './images/6.jpeg', './images/5.jpeg', './images/4.jpeg', './images/3.jpeg', './images/2.jpeg', './images/1.jpeg'];
+  var imgDescList = ['I not lying, my mind is full of you, love.', 
+                    'I am yours and you are mine', 
+                    'Your love is all I need to feel complete in life.', 
+                    'Every love story in this universe is beautiful. But, ours love story is my favorite.', 
+                    'In a sea of people, my eyes will always search for you.', 
+                    'Loving you never was an option. Because it is necessity.', 
+                    'Love comfort like sunshine after rain.', 
+                    'I think, everything reminds me of you.', 
+                    'I have liked you since first time I met you.', 
+                    'When I looking at you, I can feel my heart race.', 
+                    'Now, I think I am gonna love you for a long time.', 
+                    'When I talk to you, I think my days gets a whole lot better.', 
+                    'I feel I am much more me when I am with you.', 
+                    'Please, can I spend the whole year with you?'];
   var isInitImage = false; //循环图片列表之后改了true,取消onload事件;
   var imgIndex = 0;
   function setTimer(){
