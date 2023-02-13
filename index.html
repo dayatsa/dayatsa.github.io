@@ -89,11 +89,11 @@
     var dateDay = new Date().getDate();
     // 设置标题
     if (month == 11 && dateDay == 30) {
-      $(document).attr("title", parseInt(years - 2020) + " tahun bersama");
+      $(document).attr("title", parseInt(years - 2020) + " Years together");
     } else if (dateDay == 30) {
-      $(document).attr("title", parseInt(days / 30) + "bulan sejak dari pertemuan pertama");
+      $(document).attr("title", parseInt(days / 30) + " Months since first Love");
     } else
-    $(document).attr("title", days + "hari");
+    $(document).attr("title", days + " Days with You");
     document.writeln(
       "<div class=\"snow\" style=\"height:100%; position:fixed; left:0px; top:0px;right:0px; bottom:0px; pointer-events: none;z-index: 9999;\"><canvas width=\"1904\" height=\"913\" style=\"position:absolute;left: 0;top: 0;\"></canvas></div>"
     );
